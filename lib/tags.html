@@ -1,0 +1,26 @@
+
+<template name="newTagPopoverToggle">
+<button class="btn btn-primary btn-mini" type="button">add new</button>
+</template>
+
+<template name="newTagDialog">
+  <form class="new-tag-dialog">
+    <div class="input-append">
+      <input class="input-medium" name="tagName" type="text">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+</template>
+
+<template name="listOfTags">
+  {{#each listOfTags}}
+  <li>
+    <div class="btn-group" draggable="true">
+      <button class="btn btn btn-mini">{{tagName}}</button>
+      <button class="btn btn btn-mini" name="delete">
+        <span>&times</span>
+      </button>
+    </div>
+  </li>
+  {{/each}}
+</template>

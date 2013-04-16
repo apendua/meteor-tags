@@ -1,0 +1,9 @@
+
+.new-tag-dialog {
+  padding : 0;
+  margin: 0;
+}
+
+.new-tag-dialog .input-append {
+  margin : 0;
+}
