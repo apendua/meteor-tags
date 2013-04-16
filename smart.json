@@ -1,0 +1,9 @@
+{
+    "name": "tags",
+    "description": "Add tags to selected collections",
+    "homepage": "https://github.com/apendua/meteor-tags",
+    "author": "Tomasz Lenarcik",
+    "version": "0.1.0",
+    "git": "https://github.com/apendua/meteor-tags.git",
+    "packages": {}
+}
