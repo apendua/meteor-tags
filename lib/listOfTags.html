@@ -1,0 +1,14 @@
+
+<template name="listOfTags">
+  {{#each listOfTags}}
+  <li>
+    <div class="btn-group" draggable="true">
+      <button class="btn btn btn-mini">{{tagName}}</button>
+      <button class="btn btn btn-mini" name="delete">
+        <span>&times</span>
+      </button>
+    </div>
+  </li>
+  {{/each}}
+  <li>{{> newTagPopoverToggle}}</li>
+</template>
