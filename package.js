@@ -4,7 +4,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use(['underscore', 'bootstrap', 'templating', 'jquery'], 'client');
+    api.use(['underscore', 'bootstrap', 'templating', 'jquery', 'handlebars'], 'client');
 
     api.add_files("lib/tags.js", ['client', 'server']);
 
@@ -21,4 +21,6 @@ Package.on_use(function (api) {
       'lib/tags.css',
 
     ], 'client');
+
+    api.export('Tags');
 });
