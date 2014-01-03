@@ -1,9 +1,9 @@
 {
     "name": "tags",
-    "description": "Add tags to selected collections",
-    "homepage": "https://github.com/apendua/meteor-tags",
+    "description": "Add tags to selected collections (modified for solvers)",
+    "homepage": "https://github.com/solvers/meteor-tags",
     "author": "Tomasz Lenarcik",
     "version": "0.1.2.2",
-    "git": "https://github.com/apendua/meteor-tags.git",
+    "git": "https://github.com/solvers/meteor-tags.git",
     "packages": {}
 }
