@@ -1,7 +1,6 @@
 
 <template name="listOfTags">
-  {{#with listOfTags}}
-  {{#each tags}}
+  {{#each listOfTags.tags}}
   <li>
     <div class="btn-group" draggable="true">
       <button class="btn btn btn-mini">{{tagName}}</button>
@@ -13,8 +12,7 @@
     </div>
   </li>
   {{/each}}
-  {{#if readwrite}}
+  {{#if listOfTags.readwrite}}
     <li>{{> newTagPopoverToggle}}</li>
   {{/if}}
-  {{/with}}
 </template>
