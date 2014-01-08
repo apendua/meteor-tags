@@ -25,5 +25,7 @@ Package.on_use(function (api) {
 
     ], 'client');
 
-    api.export('Tags');
+    if (api.export !== undefined) {
+      api.export('Tags');
+    }
 });
