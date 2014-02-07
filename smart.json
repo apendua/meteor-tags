@@ -1,9 +1,9 @@
 {
-    "name": "tags",
-    "description": "Add tags to selected collections (modified for solvers)",
+    "name": "flextags",
+    "description": "Add tags to selected collections (modified for solvers to include permission checking)",
     "homepage": "https://github.com/solvers/meteor-tags",
-    "author": "Tomasz Lenarcik",
-    "version": "0.1.2.2",
+    "author": "Tomasz Lenarcik, Dave Clayton",
+    "version": "0.1.3",
     "git": "https://github.com/solvers/meteor-tags.git",
     "packages": {}
 }
