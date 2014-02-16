@@ -1,11 +1,10 @@
-
 <template name="listOfTags">
   {{#each listOfTags.tags}}
   <li>
     <div class="btn-group" draggable="true">
-      <button class="btn btn btn-mini">{{tagName}}</button>
+      <button class="btn btn btn-xs">{{tagName}}</button>
       {{#if mayRemove}}
-      <button class="btn btn btn-mini" name="delete">
+      <button class="btn btn btn-xs" name="delete">
         <span>&times</span>
       </button>
       {{/if}}
