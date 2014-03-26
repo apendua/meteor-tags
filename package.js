@@ -18,6 +18,7 @@ Package.on_use(function (api) {
       'lib/newTagDialog.html',
 
       // JS source
+      'lib/typeahead.jquery.min.js', // consider adding this as a separate package
       'lib/listOfTags.js',
       'lib/newTagDialog.js',
       'lib/helpers.js',
