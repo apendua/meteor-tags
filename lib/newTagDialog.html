@@ -1,13 +1,22 @@
 
 <template name="newTagPopoverToggle">
-  <button class="btn btn-primary btn-mini" type="button">add new</button>
+  <button class="btn btn-default btn-primary btn-xs" type="button">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
 </template>
 
 <template name="newTagDialog">
-  <form class="new-tag-dialog">
-    <div class="input-append">
-      <input class="input-medium" name="tagName" type="text">
-      <button type="submit" class="btn btn-primary">Save</button>
+  <form class="form-inline new-tag-dialog">
+   <div class="input-group">
+      
+      <input class="form-control input-sm" name="tagName" type="text">
+      
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary btn-sm">
+          <span class="glyphicon glyphicon-tag"></span>
+        </button>
+      </span>
+
     </div>
   </form>
 </template>
