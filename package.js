@@ -4,7 +4,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use(['underscore', 'templating', 'jquery', 'handlebars'], 'client');
+    api.use(['underscore', 'ui', 'templating', 'jquery', 'handlebars'], 'client');
     
     // this is required since Meteor 0.6.5
     api.use(['livedata', 'mongo-livedata'], ['client', 'server']);
@@ -15,14 +15,10 @@ Package.on_use(function (api) {
 
       // HTML templates
       'lib/listOfTags.html',
-      'lib/newTagDialog.html',
 
       // JS source
-      'lib/typeahead.jquery.min.js', // consider adding this as a separate package
       'lib/listOfTags.js',
-      'lib/newTagDialog.js',
       'lib/helpers.js',
-      'lib/tags.css',
 
     ], 'client');
 
