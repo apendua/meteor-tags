@@ -9,13 +9,13 @@ Package.on_use(function (api) {
     // this is required since Meteor 0.6.5
     api.use(['livedata', 'mongo-livedata'], ['client', 'server']);
 
-    api.add_files("lib/tags.js", ['client', 'server']);
+    api.add_files("tags.js", ['client', 'server']);
 
     api.add_files([
 
       // JS source
-      'lib/startup.js',
-      'lib/helpers.js',
+      'startup.js',
+      'helpers.js',
 
     ], 'client');
 
