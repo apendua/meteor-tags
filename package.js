@@ -4,7 +4,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use(['underscore', 'templating', 'jquery', 'handlebars'], 'client');
+    api.use(['underscore', 'ui', 'less', 'templating', 'jquery', 'handlebars'], 'client');
     
     // this is required since Meteor 0.6.5
     api.use(['livedata', 'mongo-livedata'], ['client', 'server']);
@@ -23,6 +23,10 @@ Package.on_use(function (api) {
       'lib/newTagDialog.js',
       'lib/helpers.js',
       'lib/tags.css',
+
+      // Third Party
+      'bootstrap-tagsinput/bootstrap-tagsinput.less',
+      'bootstrap-tagsinput/bootstrap-tagsinput.js',
 
     ], 'client');
 
