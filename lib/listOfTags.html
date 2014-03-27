@@ -3,12 +3,11 @@
   {{#each listOfTags}}
   <li>
     <div class="btn-group" draggable="true">
-      <button class="btn btn-default btn-xs" name="tag" data-tag-name="{{name}}">{{name}}</button>
-      <button class="btn btn-default btn-xs" name="delete">
+      <button class="btn btn-default btn-xs" data-action="click" data-tag-name="{{name}}">{{name}}</button>
+      <button class="btn btn-default btn-xs" data-action="close">
         <span>&times;</span>
       </button>
     </div>
   </li>
   {{/each}}
-  <li>{{> newTagPopoverToggle}}</li>
 </template>
