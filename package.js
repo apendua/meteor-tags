@@ -13,11 +13,8 @@ Package.on_use(function (api) {
 
     api.add_files([
 
-      // HTML templates
-      'lib/listOfTags.html',
-
       // JS source
-      'lib/listOfTags.js',
+      'lib/startup.js',
       'lib/helpers.js',
 
     ], 'client');
