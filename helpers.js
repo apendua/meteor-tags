@@ -36,8 +36,9 @@ Handlebars.registerHelper('tagsAsListOfButtons', function () {
           'draggable' : options.draggable ? 'true' : '',
         }, [
           HTML.BUTTON({
+            // TODO: using heleprs seems to be a very bad way of solving this issue
             'class': function () {
-              return Spacebars.call(self.lookup('tagClass'), defaults.tagClass) || defaults.tagClass;
+              return Spacebars.mustache(self.lookup('tagClass')) || defaults.tagClass;
             },
             'data-action': 'click',
           }, function () {
@@ -46,13 +47,13 @@ Handlebars.registerHelper('tagsAsListOfButtons', function () {
           UI.If(function () {
             var showCloseButton;
             if (_.isString(defaults.close)) {
-              showCloseButton = Spacebars.call(self.lookup(defaults.close));
+              showCloseButton = Spacebars.mustache(self.lookup(defaults.close));
             }
             return showCloseButton !== undefined ? showCloseButton : defaults.close;
           }, UI.block(function () {
             return HTML.BUTTON({
               'class': function () {
-                return Spacebars.call(self.lookup('tagClass'), defaults.tagClass) || defaults.tagClass;
+                return Spacebars.mustache(self.lookup('tagClass')) || defaults.tagClass;
               },
               'data-action': 'close',
             }, HTML.Raw('x'));
