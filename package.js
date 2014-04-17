@@ -4,7 +4,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.use(['underscore', 'templating', 'jquery', 'handlebars'], 'client');
+    api.use(['underscore', 'templating', 'jquery', 'ui'], 'client');
     
     // this is required since Meteor 0.6.5
     api.use(['livedata', 'mongo-livedata'], ['client', 'server']);
